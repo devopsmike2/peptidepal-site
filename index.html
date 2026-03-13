@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeptidePal</title>
+  <style>
+    :root {
+      --teal: #008FA3;
+      --teal-mid: #00C3B5;
+      --green: #78B75A;
+      --gold: #CFB01E;
+      --bg: #F6F8FC;
+      --surface: #FFFFFF;
+      --text: #0F172A;
+      --muted: #64748B;
+      --border: #E2E8F0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+    .card {
+      max-width: 480px;
+      background: var(--surface);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 48px 36px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+    }
+    .logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, var(--teal), var(--teal-mid), var(--green), var(--gold));
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      font-weight: 900;
+      color: white;
+      box-shadow: 0 8px 24px rgba(0,143,163,0.3);
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--teal), var(--teal-mid), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .links a {
+      display: block;
+      padding: 14px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.2s;
+    }
+    .links a.primary {
+      background: linear-gradient(135deg, var(--teal), var(--teal-mid));
+      color: white;
+    }
+    .links a.primary:hover { opacity: 0.9; transform: translateY(-1px); }
+    .links a.secondary {
+      background: var(--bg);
+      color: var(--teal);
+      border: 1px solid var(--border);
+    }
+    .links a.secondary:hover { border-color: var(--teal); }
+    footer {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">P</div>
+    <h1>PeptidePal</h1>
+    <p class="tagline">Your personal peptide companion — educational reference, tracking, and reminders.</p>
+    <div class="links">
+      <a href="privacy-policy.html" class="secondary">Privacy Policy</a>
+      <a href="terms.html" class="secondary">Terms of Use</a>
+      <a href="support.html" class="secondary">Support</a>
+    </div>
+  </div>
+  <footer>&copy; 2026 PeptidePal. All rights reserved.</footer>
+</body>
+</html>
